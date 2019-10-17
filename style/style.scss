@@ -2,6 +2,10 @@
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
+@mixin raleway_light {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
 
 @font-face {
     font-family: Pacifico;
@@ -19,8 +23,6 @@ header {
 }
 nav {
     @include raleway_bold();
-li:active {
-    color: red;
-}
+    display: inline;
 }
 

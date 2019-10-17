@@ -13,6 +13,5 @@ header {
 
 nav {
   font-family: 'Raleway', sans-serif;
-  font-weight: bold; }
-  nav li:active {
-    color: red; }
+  font-weight: bold;
+  display: inline; }
