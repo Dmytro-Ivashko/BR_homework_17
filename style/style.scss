@@ -1,4 +1,4 @@
-@mixin releway_bold {
+@mixin raleway_bold {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
@@ -7,15 +7,20 @@
     font-family: Pacifico;
     src: url(../font/Pacifico.ttf);
   }
-body{
-    background-color: red;
-}
+
 header {
     display: flex;
     margin: 0 150px 0 150px;
+}
 #logo {
     font-family: Pacifico;
     font-size: 50px;
     font-weight: regular;
 }
+nav {
+    @include raleway_bold();
+li:active {
+    color: red;
 }
+}
+
