@@ -1,28 +1,105 @@
+$orang:#ff6033;
+
+@mixin raleway_heavy {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
 @mixin raleway_bold {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
+
 @mixin raleway_light {
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 @font-face {
     font-family: Pacifico;
     src: url(../font/Pacifico.ttf);
-  }
+}
+
+body {
+    margin: 0;
+    background-color: blue;
+
+}
+
+.container {
+    margin: 0 165px 0 165px;
+}
+
+/* HEADER START  */
 
 header {
-    display: flex;
-    margin: 0 150px 0 150px;
+
+    min-height: 800px;
+    background-color: white;
+    background: url(../img/header-bg.png) no-repeat center / cover;
 }
+
 #logo {
     font-family: Pacifico;
     font-size: 50px;
-    font-weight: regular;
-}
-nav {
-    @include raleway_bold();
-    display: inline;
+    font-weight: 400;
+    // width: 200px;
 }
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    li {
+        @include raleway_bold();
+        font-size: 16px;
+        line-height: 25px;
+        display: inline;
+        padding: 0 10px 0 10px;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            border-top: $orang solid 3px;
+        }
+    }
+}
+
+#info {
+    width: 368px;
+    padding: 150px 0 0 0;
+    color: #262626;
+
+    h2 {
+        @include raleway_heavy();
+        font-size: 60px;
+        line-height: 25px;
+    }
+
+    p {
+        @include raleway_light();
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 27px;
+    }
+
+    button {
+        width: 200px;
+        height: 55px;
+        border: none;
+        background-color: $orang;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 27px;
+        font-family: Raleway;
+    }
+
+}
+
+/* HEADER END  */
