@@ -165,4 +165,19 @@ nav {
     color: #262626;
     text-align: center; }
 
+#subscribe {
+  height: 500px;
+  background-color: white; }
+
+#blog {
+  height: 865px;
+  background-color: #b07cf7; }
+
+#contacts {
+  height: 866px; }
+
+footer {
+  height: 90px;
+  background-color: #262626; }
+
 /* Main End  */
