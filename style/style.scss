@@ -7,7 +7,7 @@ $orang:#ff6033;
 
 @mixin raleway_bold {
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 @mixin raleway_light {
@@ -22,7 +22,7 @@ $orang:#ff6033;
 
 body {
     margin: 0;
-    background-color: blue;
+    background-color: #f9f8fb;
 
 }
 
@@ -34,16 +34,15 @@ body {
 
 header {
 
-    min-height: 800px;
-    background-color: white;
-    background: url(../img/header-bg.png) no-repeat center / cover;
+    min-height: 900px;
+    background-color: #f9f8fb;
+    background: url(../img/header-bg.png) no-repeat center;
 }
 
 #logo {
     font-family: Pacifico;
     font-size: 50px;
     font-weight: 400;
-    // width: 200px;
 }
 
 nav {
@@ -86,20 +85,38 @@ nav {
         font-size: 17px;
         font-weight: 300;
         line-height: 27px;
+      
     }
 
     button {
+        @include raleway_light();
         width: 200px;
         height: 55px;
         border: none;
         background-color: $orang;
         color: #ffffff;
         font-size: 20px;
-        font-weight: 300;
         line-height: 27px;
-        font-family: Raleway;
+        margin-top: 30px;
     }
 
 }
 
 /* HEADER END  */
+
+/* Main Start  */
+#about {
+    @include raleway_light();
+    color: white;
+    height: 700px;
+    background-image: url("../img/raspberry.png");
+    background-repeat: no-repeat;
+    background-color: #00b2b2;
+    background-position-y: 50px;
+    background-position-x: 165px;
+}
+#about-info {
+    width: 500px;
+    height: 315px;
+}
+/* Main End  */

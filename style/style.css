@@ -4,16 +4,16 @@
 
 body {
   margin: 0;
-  background-color: blue; }
+  background-color: #f9f8fb; }
 
 .container {
   margin: 0 165px 0 165px; }
 
 /* HEADER START  */
 header {
-  min-height: 800px;
-  background-color: white;
-  background: url(../img/header-bg.png) no-repeat center/cover; }
+  min-height: 900px;
+  background-color: #f9f8fb;
+  background: url(../img/header-bg.png) no-repeat center; }
 
 #logo {
   font-family: Pacifico;
@@ -27,7 +27,7 @@ nav {
   align-items: baseline; }
   nav li {
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 25px;
     display: inline;
@@ -54,14 +54,32 @@ nav {
     font-weight: 300;
     line-height: 27px; }
   #info button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     width: 200px;
     height: 55px;
     border: none;
     background-color: #ff6033;
     color: #ffffff;
     font-size: 20px;
-    font-weight: 300;
     line-height: 27px;
-    font-family: Raleway; }
+    margin-top: 30px; }
 
 /* HEADER END  */
+/* Main Start  */
+#about {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: white;
+  height: 700px;
+  background-image: url("../img/raspberry.png");
+  background-repeat: no-repeat;
+  background-color: #00b2b2;
+  background-position-y: 50px;
+  background-position-x: 165px; }
+
+#about-info {
+  width: 500px;
+  height: 315px; }
+
+/* Main End  */
