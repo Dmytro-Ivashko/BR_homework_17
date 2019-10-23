@@ -19,7 +19,7 @@
     justify-content: left;
 }
 
-@mixin flex_row {}
+// @mixin flex_row {}
 
 @font-face {
     font-family: Pacifico;
@@ -41,7 +41,7 @@ header {
 }
 
 #header-top {
-    height: 100px;
+    height: 128px;
     margin-left: 9%;
     margin-right: 9%;
     display: flex;
@@ -54,6 +54,16 @@ header {
     font-family: Pacifico;
     font-size: 50px;
     font-weight: 400;
+}
+
+#dvs-menu,
+header label {
+    display: none;
+}
+
+label {
+    width: 64px;
+    height: 64px;
 }
 
 nav {
