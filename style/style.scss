@@ -1,5 +1,3 @@
-$orang:#ff6033;
-
 @mixin raleway_heavy {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -15,28 +13,41 @@ $orang:#ff6033;
     font-weight: 300;
 }
 
+@mixin flex_col_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+@mixin flex_row {}
+
 @font-face {
     font-family: Pacifico;
     src: url(../font/Pacifico.ttf);
 }
 
 body {
+    min-width: 600px;
     margin: 0;
     background-color: white;
 
 }
 
-.container {
-    margin: 0 165px 0 165px;
-}
-
 /* HEADER START  */
 
 header {
-
     min-height: 900px;
-    background-color: #f9f8fb;
-    background: url(../img/header-bg.png) no-repeat center;
+    background: #f9f9fb url(../img/header-bg.png) no-repeat center;
+}
+
+#header-top {
+    height: 100px;
+    margin-left: 9%;
+    margin-right: 9%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 #logo {
@@ -46,11 +57,6 @@ header {
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline;
-
     li {
         @include raleway_bold();
         font-size: 16px;
@@ -64,13 +70,15 @@ nav {
         }
 
         a:hover {
-            border-top: $orang solid 3px;
+            border-top: #ff6033 solid 3px;
         }
     }
 }
 
 #info {
+    @include flex_col_left ();
     width: 368px;
+    margin-left: 165px;
     padding: 150px 0 0 0;
     color: #262626;
 
@@ -93,7 +101,7 @@ nav {
         width: 200px;
         height: 55px;
         border: none;
-        background-color: $orang;
+        background-color: #ff6033;
         color: #ffffff;
         font-size: 20px;
         line-height: 27px;
@@ -155,6 +163,7 @@ nav {
     padding: 159px 0 151px 265px;
     display: flex;
     flex-direction: column;
+
     .services-button {
         @include raleway_bold();
         font-size: 20px;
@@ -191,6 +200,7 @@ nav {
     display: flex;
     flex-direction: column;
 }
+
 #gall_button {
     @include raleway_light();
     width: 200px;
@@ -202,6 +212,7 @@ nav {
     line-height: 27px;
     margin: 30px auto;
 }
+
 #gallery-info {
     width: 600px;
     height: 200px;
@@ -210,6 +221,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     h2 {
         @include raleway_bold();
         font-size: 90px;
@@ -217,6 +229,7 @@ nav {
         line-height: 27px;
         margin: auto;
     }
+
     p {
         @include raleway_light();
         font-size: 17px;
@@ -225,6 +238,7 @@ nav {
         text-align: center;
     }
 }
+
 #gallery-img {
     margin: 0 auto;
     display: grid;
@@ -234,6 +248,7 @@ nav {
     grid-row-gap: 15px;
     justify-items: center;
 }
+
 #item-1 {
     grid-area: 1 / 1 / 3 / 5;
     justify-self: start;
@@ -259,17 +274,21 @@ nav {
     grid-area: 3 / 4 / 4 / 7;
     justify-self: end;
 }
+
 #subscribe {
     height: 500px;
     background-color: white;
 }
+
 #blog {
     height: 865px;
     background-color: #b07cf7;
 }
+
 #contacts {
     height: 866px;
 }
+
 /* Main End  */
 
 footer {

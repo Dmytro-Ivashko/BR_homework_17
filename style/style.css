@@ -3,43 +3,48 @@
   src: url(../font/Pacifico.ttf); }
 
 body {
+  min-width: 600px;
   margin: 0;
   background-color: white; }
-
-.container {
-  margin: 0 165px 0 165px; }
 
 /* HEADER START  */
 header {
   min-height: 900px;
-  background-color: #f9f8fb;
-  background: url(../img/header-bg.png) no-repeat center; }
+  background: #f9f9fb url(../img/header-bg.png) no-repeat center; }
+
+#header-top {
+  height: 100px;
+  margin-left: 9%;
+  margin-right: 9%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline; }
 
 #logo {
   font-family: Pacifico;
   font-size: 50px;
   font-weight: 400; }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline; }
-  nav li {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 25px;
-    display: inline;
-    padding: 0 10px 0 10px; }
-    nav li a {
-      color: black;
-      text-decoration: none; }
-    nav li a:hover {
-      border-top: #ff6033 solid 3px; }
+nav li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  display: inline;
+  padding: 0 10px 0 10px; }
+  nav li a {
+    color: black;
+    text-decoration: none; }
+  nav li a:hover {
+    border-top: #ff6033 solid 3px; }
 
 #info {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
   width: 368px;
+  margin-left: 165px;
   padding: 150px 0 0 0;
   color: #262626; }
   #info h2 {
