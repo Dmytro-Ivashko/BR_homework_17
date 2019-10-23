@@ -6,13 +6,8 @@
       display: block;
       width: 64px;
       height: 64px; }
-  nav {
-    float: right;
-    width: 200px;
-    margin-left: -200px;
-    transition: all 0.5s; }
-    nav ul {
-      flex-direction: column; } }
+    #header-top nav {
+      display: none; } }
 
 @media all and (max-width: 768px) {
   header {

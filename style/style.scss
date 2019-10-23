@@ -252,7 +252,7 @@ nav {
 #gallery-img {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(6, 190px);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 5px;
     grid-row-gap: 15px;
