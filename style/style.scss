@@ -26,19 +26,69 @@
     src: url(../font/Pacifico.ttf);
 }
 
-// body {
-//     min-width: 600px;
-//     margin: 0;
-//     background-color: white;
+body {
+    margin: 0;
+}
 
-// }
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    min-height: 600px;
+    background: #f9f9fb url(../img/header-bg.png) no-repeat center;
+}
+.header-top {
+    width: 90%;
+    height: 10vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-// /* HEADER START  */
+.logo {
+    font-family: Pacifico;
+    font-size: 50px;
+    font-weight: 400;
+}
 
-// header {
-//     min-height: 900px;
-//     background: #f9f9fb url(../img/header-bg.png) no-repeat center;
-// }
+nav {
+    width: 60%;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+    }
+    li {
+        @include raleway_bold();
+        font-size: 16px;
+        line-height: 25px;
+        text-decoration: none;
+        
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        border-top: #ff6033 solid 3px;
+    }
+}
+.header-top{
+    border: 1px solid red;
+
+}
+.info {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: start;
+    align-content: flex-end;
+}
+
 
 // #header-top {
 //     height: 128px;
@@ -50,11 +100,6 @@
 //     align-items: baseline;
 // }
 
-// #logo {
-//     font-family: Pacifico;
-//     font-size: 50px;
-//     font-weight: 400;
-// }
 
 // #dvs-menu,
 // header label {
@@ -66,24 +111,7 @@
 //     height: 64px;
 // }
 
-// nav {
-//     li {
-//         @include raleway_bold();
-//         font-size: 16px;
-//         line-height: 25px;
-//         display: inline;
-//         padding: 0 10px 0 10px;
 
-//         a {
-//             color: black;
-//             text-decoration: none;
-//         }
-
-//         a:hover {
-//             border-top: #ff6033 solid 3px;
-//         }
-//     }
-// }
 
 // #info {
 //     @include flex_col_left ();
