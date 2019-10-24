@@ -18,7 +18,13 @@
     flex-direction: column;
     justify-content: left;
 }
-
+@mixin flex_row_center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    
+}
 // @mixin flex_row {}
 
 @font-face {
@@ -26,8 +32,15 @@
     src: url(../font/Pacifico.ttf);
 }
 
+// *{
+//     box-sizing: border-box;
+// }
 body {
     margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f9f9fb;
 }
 
 header{
@@ -36,13 +49,14 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    min-height: 600px;
+    max-height: 800px;
+    // min-height: 600px;
     background: #f9f9fb url(../img/header-bg.png) no-repeat center;
 }
 .header-top {
     width: 90%;
     height: 10vh;
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,11 +69,11 @@ header{
 }
 
 nav {
-    width: 60%;
+    // width: 60%;
     ul{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         list-style: none;
     }
     li {
@@ -67,7 +81,7 @@ nav {
         font-size: 16px;
         line-height: 25px;
         text-decoration: none;
-        
+        margin: 10px;
     }
     a {
         color: black;
@@ -77,116 +91,95 @@ nav {
         border-top: #ff6033 solid 3px;
     }
 }
-.header-top{
+.header-info{
     border: 1px solid red;
-
-}
-.info {
-    margin-left: 10%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    // justify-content: start;
-    align-content: flex-end;
+    justify-content: start;
+    // align-content: flex-end;
+
+}
+.info-content {
+    @include flex_col_left ();
+    color: #262626;
+    max-width: 368px;
+    display: flex;
+    h2 {
+        @include raleway_heavy();
+        font-size: 60px;
+        font-size: 4em;
+        line-height: 25px;
+    }
+
+    p {
+        @include raleway_light();
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 27px;
+
+    }
+
+    button {
+        @include raleway_light();
+        width: 200px;
+        height: 55px;
+        border: none;
+        background-color: #ff6033;
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 27px;
+        margin-top: 30px;
+        
+    }
+}
+.scroll{
+    height: 10vh;
+    cursor: pointer;
+}
+
+#about{
+    background-color: #00b2b2;
+    width: 100%;
+    display: flex;
+    max-height: 700px;  
+    justify-content: center;
+}
+
+#about-content {
+    @include flex_row_center();
+    width: 90%;
+    border: 1px solid red;
+    #about-img{
+        width: 45%;
+        border: solid 1px red;
+    }
+    #about-info{
+        @include raleway_light();
+        color: white;
+        // width: 60%;
+        margin-left: 10px;
+        h2 {
+            @include raleway_bold();
+            // font-size: 90px;
+            font-size: 90px;
+            line-height: 27px;
+            margin: 0;
+            padding-bottom: 25px;
+        }
+    
+        p {
+            font-size: 17px;
+            line-height: 27px;
+            margin: 0;
+            padding: 10px 0;
+        }
+    }
 }
 
 
-// #header-top {
-//     height: 128px;
-//     margin-left: 9%;
-//     margin-right: 9%;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//     align-items: baseline;
-// }
 
 
-// #dvs-menu,
-// header label {
-//     display: none;
-// }
-
-// label {
-//     width: 64px;
-//     height: 64px;
-// }
-
-
-
-// #info {
-//     @include flex_col_left ();
-//     width: 368px;
-//     margin-left: 165px;
-//     padding: 150px 0 0 0;
-//     color: #262626;
-
-//     h2 {
-//         @include raleway_heavy();
-//         font-size: 60px;
-//         line-height: 25px;
-//     }
-
-//     p {
-//         @include raleway_light();
-//         font-size: 17px;
-//         font-weight: 300;
-//         line-height: 27px;
-
-//     }
-
-//     button {
-//         @include raleway_light();
-//         width: 200px;
-//         height: 55px;
-//         border: none;
-//         background-color: #ff6033;
-//         color: #ffffff;
-//         font-size: 20px;
-//         line-height: 27px;
-//         margin-top: 30px;
-//     }
-
-// }
-
-// /* HEADER END  */
-
-// /* Main Start  */
-// #about {
-//     @include raleway_light();
-//     color: white;
-//     height: 700px;
-//     background-image: url("../img/raspberry.png");
-//     background-repeat: no-repeat;
-//     background-color: #00b2b2;
-//     background-position: left 165px top 50px;
-//     display: flex;
-//     flex-direction: row-reverse;
-//     justify-content: flex-start;
-//     flex-wrap: wrap;
-//     align-items: baseline;
-// }
-
-// #about-info {
-//     width: 500px;
-//     height: 315px;
-//     margin: 175px 165px 0 0;
-
-//     h2 {
-//         @include raleway_bold();
-//         font-size: 90px;
-//         line-height: 27px;
-//         margin: 0;
-//         padding-bottom: 25px;
-//     }
-
-//     p {
-//         @include raleway_light();
-//         font-size: 17px;
-//         line-height: 27px;
-//         margin: 0;
-//         padding: 10px 0;
-//     }
-// }
 
 // #services {
 //     height: 790px;
