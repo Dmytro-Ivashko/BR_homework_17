@@ -1,85 +1,101 @@
 @font-face {
-  font-family: Pacifico;
-  src: url(../font/Pacifico.ttf); }
+    font-family: Pacifico;
+    src: url(../font/Pacifico.ttf);
+}
 
 body {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-  overflow-x: hidden;
-  background-color: #f9f9fb;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f9f9fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  max-height: 800px;
-  background: #f9f9fb url(../img/header-bg.png) no-repeat center; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    max-height: 800px;
+    background: #f9f9fb url(../img/header-bg.png) no-repeat center;
+}
 
 .header-top {
-  width: 90%;
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .logo {
-  font-family: Pacifico;
-  font-size: 50px;
-  font-weight: 400; }
+    font-family: Pacifico;
+    font-size: 50px;
+    font-weight: 400;
+}
 
 nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none; }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
 
 nav li {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 25px;
-  text-decoration: none;
-  margin: 10px; }
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    text-decoration: none;
+    margin: 10px;
+}
 
 nav a {
-  color: black;
-  text-decoration: none; }
+    color: black;
+    text-decoration: none;
+}
 
 nav a:hover {
-  border-top: #ff6033 solid 3px; }
+    border-top: #ff6033 solid 3px;
+}
 
 .header-info {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start; }
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
 
 .info-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  color: #262626;
-  max-width: 368px;
-  display: flex; }
-  .info-content h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: #262626;
+    max-width: 368px;
+    display: flex;
+}
+
+.info-content h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 60px;
     font-size: 4em;
-    line-height: 25px; }
-  .info-content p {
+    line-height: 25px;
+}
+
+.info-content p {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 17px;
     font-weight: 300;
-    line-height: 27px; }
-  .info-content button {
+    line-height: 27px;
+}
+
+.info-content button {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     width: 200px;
@@ -89,63 +105,78 @@ nav a:hover {
     color: #ffffff;
     font-size: 20px;
     line-height: 27px;
-    margin-top: 30px; }
+    margin-top: 30px;
+}
 
 .scroll {
-  height: 10vh;
-  cursor: pointer; }
+    height: 10vh;
+    cursor: pointer;
+}
 
 #about {
-  background-color: #00b2b2;
-  width: 100%;
-  display: flex;
-  max-height: 700px;
-  justify-content: center; }
+    background-color: #00b2b2;
+    width: 100%;
+    display: flex;
+    max-height: 700px;
+    justify-content: center;
+}
 
 #about-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  border: 1px solid red; }
-  #about-content #about-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border: 1px solid red;
+}
+
+#about-content #about-img {
     width: 45%;
-    border: solid 1px red; }
-  #about-content #about-info {
+    border: solid 1px red;
+}
+
+#about-content #about-info {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     color: white;
-    margin-left: 10px; }
-    #about-content #about-info h2 {
-      font-family: 'Raleway', sans-serif;
-      font-weight: 700;
-      font-size: 90px;
-      line-height: 27px;
-      margin: 0;
-      padding-bottom: 25px; }
-    #about-content #about-info p {
-      font-size: 17px;
-      line-height: 27px;
-      margin: 0;
-      padding: 10px 0; }
+    margin-left: 10px;
+}
+
+#about-content #about-info h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 27px;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+#about-content #about-info p {
+    font-size: 17px;
+    line-height: 27px;
+    margin: 0;
+    padding: 10px 0;
+}
 
 #services {
-  background-color: #70bfff;
-  width: 100%;
-  height: 790px;
-  display: flex;
-  max-height: 700px;
-  justify-content: center; }
+    background-color: #70bfff;
+    width: 100%;
+    height: 790px;
+    display: flex;
+    max-height: 700px;
+    justify-content: center;
+}
 
 #services-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  border: 1px solid red; }
-  #services-content #services-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border: 1px solid red;
+}
+
+#services-content #services-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,15 +187,19 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: 75% auto;
     background-position: center;
-    border: solid 1px red; }
-    #services-content #services-img h2 {
-      font-family: 'Raleway', sans-serif;
-      font-weight: 700;
-      color: white;
-      text-align: center;
-      font-size: 60px;
-      line-height: 27px; }
-  #services-content #services-info li {
+    border: solid 1px red;
+}
+
+#services-content #services-img h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    line-height: 27px;
+}
+
+#services-content #services-info li {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 22px;
@@ -172,4 +207,5 @@ nav a:hover {
     margin: 20px 0;
     background-color: #ffffff;
     text-align: center;
-    list-style: none; }
+    list-style: none;
+}
